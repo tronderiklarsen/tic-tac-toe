@@ -12,13 +12,18 @@
   body {
     margin: 0;
     font-family: 'Ubuntu Mono', monospace;
-
+    background-color: #6BAEE0;
   }
 
-  h1 {
+  header {
+    margin-top: 24px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
+  }
+
+  .logo {
+    width: 150px;
   }
 
   p {
@@ -73,7 +78,10 @@
   }
   
   .cell.x::before,
-  .cell.x::after,
+  .cell.x::after {
+    background-color: darkred;
+  }
+
   .cell.circle::before {
     background-color: black;
   }
@@ -123,7 +131,7 @@
   .board.circle .cell:not(.x):not(.circle):hover::after {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size) * .7);
-    background-color: white;
+    background-color: #6BAEE0;
   }
   
   .winning-message {
@@ -133,10 +141,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(107, 174, 224, .9);
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     font-size: 3rem;
     text-transform: uppercase;
     flex-direction: column;
@@ -146,17 +154,17 @@
     margin-top: 2rem;
     font-size: 2rem;
     font-family: 'Ubuntu Mono', monospace;
-    background-color: white;
-    border: 1px solid black;
+    background-color: #6BAEE0;
+    border: 4px solid white;
     padding: .5em .5em;
     cursor: pointer;
     text-transform: uppercase
   }
   
   .winning-message button:hover {
-    background-color: black;
-    color: white;
-    border-color: white;
+    background-color: rgba(107, 174, 224, .9);
+    text-decoration: underline;
+    border-color: black;
   }
   
   .winning-message.show {

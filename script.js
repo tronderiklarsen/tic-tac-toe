@@ -58,7 +58,7 @@ function endGame(draw) {
   } else {
     winningMessageTextElement.innerText = `${circleTurn ? "O" : "X"} vinner!`
     jsConfetti.addConfetti({
-        emojis: ['⚽️', '💩', '😛'],
+        emojis: ['⚽️'],
         emojiSize: 100,
         confettiNumber: 150,
     })
